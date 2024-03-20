@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
 const path = require("path");
@@ -8,7 +8,6 @@ const cloudinary = require("../public/image/cloudinary")
 const otpGenerator = require("otp-generator");
 const User = require("../models/user.schema");
 const emailSender = require("../middleware/email");
- const emailSenderTemplate = require("../middleware/email");
 
 
 
