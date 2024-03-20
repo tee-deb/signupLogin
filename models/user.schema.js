@@ -17,10 +17,6 @@ const userSchema = new mongoose.Schema({
     otp: {
         type: String
     },
-    otp: {
-        type: String,
-         required: true,
-    },
     otpCreatedAt: {
         type: Date,
        
@@ -34,6 +30,9 @@ const userSchema = new mongoose.Schema({
             description: {
                 type: String,
                 required: true,
+            },
+            profilePic: {
+                type: String,
             },
             completed: {
                 type: Boolean,
